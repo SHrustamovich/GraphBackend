@@ -3,7 +3,7 @@ module.exports = gql`
 type Orders {
     id:ID!
     product:String!
-    count:Int!
+    count:String!
     name:String!
     add:String!
     phone:String!
@@ -15,7 +15,7 @@ extend type Query {
 extend type Mutation {
     newOrder(
         product:String!
-        count:Int!
+        count:String!
         name:String!
         add:String!
         phone:String!):[Orders]
